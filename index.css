@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Mynerve&family=Mystery+Quest&family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=The+Girl+Next+Door&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+.container{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+p{
+    color: rgb(255, 255,255);
+
+}
+/* TRANSITION */
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+nav, .nav-links{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: flex-start;  /* Align nav items to left */
+    align-items: center;
+    padding: 2rem;
+    width: 100%;  /* Take full width */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-right: auto;  /* Push portfolio to right */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: -1100px;
+    gap: 5rem;
+    margin: 0 1rem;
+    padding: 0 rem;
+    font-size: 1.2rem;
+    
+}
+
+.portfolio {
+    font-family: 'Mynerve', cursive; 
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    margin-left: auto;  /* Push portfolio to right */
+    padding-right: 2rem;  /* Add some space from right edge */
+    position: relative;
+    left: -100px;
+}
+
+.cv-button {
+    position: absolute;
+    top: 50px; 
+    left: 80%; 
+    background-color:#7184D7; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration: rgb(red, green, blue);
+
+
+}
+
+
+nav {
+    position: relative;  /* Add this to establish positioning context */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,76");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;  /* Place it behind the navigation content */
+}
+
+
+
+.wave1 {
+   position: relative;
+    left: -10%;
+  
+}
+
+.wave2 {
+    top: 50px;     /* Increased from 20px to 50px */
+    left: -30px;   /* Increased offset */
+   
+}
+
+.wave3 {
+ 
+    position: relative;   /* Increased from 40px to 100px */
+    left: 30px;   /* Increased offset */
+   ;
+}
+
+
+nav-background-container
+/* humburger menu */
+#hamburger-nav{
+    display: none;
+}
+
+.humburger-menu{
+    position: relative;
+    display: flex;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+/* Target only the first row */
+.image-row:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+   
+    transform: scale(1.0);
+}
+
+
+/* Keep other rows with original spacing */
+
+/* Target only the center row */
+.image-row.center {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;  /* Centers the row itself */
+}
+
+.image-row.center .grid-image {
+    margin-top: -25rem;  /* Moves the image upward */
+}
+
+/* Target the last row images (4 and 5) */
+.image-row:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: -2rem; /* Move up similar to center image */
+}
+
+.image-row:last-child .grid-image {
+    margin-right: -220px;
+    transform: translateX(-80px);
+}
+
+
+
+/* Adjust all grid images upward */
+.grid-image {
+    transform: translateY(-0px); /* Move all images up by 50px */
+}
+
+/* Adjust specific rows while maintaining relative positioning */
+.image-row.first-row {
+    margin-top: -50px;
+}
+
+.image-row.center .grid-image {
+    position: relative;
+    top: -20rem;
+    margin-top: 0;
+}
+
+.image-row:last-child {
+    margin-top: -290px; /* Increased negative margin to move up more */
+}
+
+
+
+
+
+
+
+
+
+img[alt="About"] {
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 33rem;
+    left: 4rem;
+    z-index: 1;
+    font-weight: bold;
+}
+
+img[alt="Experience"]{
+
+    font-size: 3rem;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 28rem;
+    left: 50rem;
+    z-index: 1;
+    font-weight: bold;
+
+}
+
+.body{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+
+
+.experience2{
+    font-size: 1.3rem;
+   height: 60%;
+   width: 40%;
+   z-index: 2;
+   position: relative;
+   margin-top: -32rem;
+   margin-left: 52rem;
+
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    
+}
+
+.about2 {
+    font-size: 1.3rem; /* Adjust font size as needed */
+   position: absolute;
+   margin-top: 15rem;
+   height: 65%;
+   width: 35%;
+   margin-top: 24rem;
+   margin-left: 7rem;
+   z-index: 1;
+   font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* HAMBURGER MENU*/
+#hamurger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Mynerve', cursive;  /* Matching your portfolio style */
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-top: 6rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.headphonebelow{
+    position: relative;
+    top: -10rem;
+    left: 4rem;
+}
+.headphone{
+    position: relative;
+    right: -6rem;
+}
+.teeth{
+    position: relative;
+    top: -20rem;
+    left: -40rem;
+    transform: scale(1.2)
+}
+
+.sweertooth{
+    
+    position: relative;
+    left: 47rem;
+    
+}
+
+.aquariumtext{
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+.aquarium {
+    position: relative;
+    top: -13rem; /* Adjust the negative value to move it up */
+    max-width: 700px;
+    height: auto;       /* Height will adjust to maintain aspect ratio */
+  }
+.justwatch1{
+    position: relative;
+    top: -20rem;
+}
+
+
+/* Target the first paragraph */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Mynerve&family=Mystery+Quest&family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=The+Girl+Next+Door&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+
+body {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    background-color: #4B5EB9;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+p{
+    color: rgb(255, 255,255);
+
+}
+/* TRANSITION */
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+nav, .nav-links{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: flex-start;  /* Align nav items to left */
+    align-items: center;
+    padding: 2rem;
+    width: 100%;  /* Take full width */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-right: auto;  /* Push portfolio to right */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: -1100px;
+    gap: 5rem;
+    margin: 0 1rem;
+    padding: 0 rem;
+    font-size: 1.2rem;
+    
+}
+
+.portfolio {
+    font-family: 'Mynerve', cursive; 
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    margin-left: auto;  /* Push portfolio to right */
+    padding-right: 2rem;  /* Add some space from right edge */
+    position: relative;
+    left: -100px;
+}
+
+.cv-button {
+    position: absolute;
+    top: 50px; 
+    left: 80%; 
+    background-color:#7184D7; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration: rgb(red, green, blue);
+
+
+}
+
+
+nav {
+    position: relative;  /* Add this to establish positioning context */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,76");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;  /* Place it behind the navigation content */
+}
+
+
+
+.wave1 {
+   position: relative;
+    left: -8%;
+  
+}
+
+.wave2 {
+    top: 50px;     /* Increased from 20px to 50px */
+    left: -10px;   /* Increased offset */
+   
+}
+
+.wave3 {
+ 
+    position: relative;   /* Increased from 40px to 100px */
+    left: 30px;   /* Increased offset */
+   ;
+}
+
+/* humburger menu */
+#hamburger-nav{
+    display: none;
+}
+
+.humburger-menu{
+    position: relative;
+    display: flex;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+/* Target only the first row */
+.image-row:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+   
+    transform: scale(1.0);
+}
+
+
+/* Keep other rows with original spacing */
+
+/* Target only the center row */
+.image-row.center {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;  /* Centers the row itself */
+}
+
+.image-row.center .grid-image {
+    margin-top: -25rem;  /* Moves the image upward */
+}
+
+/* Target the last row images (4 and 5) */
+.image-row:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: -2rem; /* Move up similar to center image */
+}
+
+.image-row:last-child .grid-image {
+    margin-right: -220px;
+    transform: translateX(-80px);
+}
+
+
+
+/* Adjust all grid images upward */
+.grid-image {
+    transform: translateY(-0px); /* Move all images up by 50px */
+}
+
+/* Adjust specific rows while maintaining relative positioning */
+.image-row.first-row {
+    margin-top: -50px;
+}
+
+.image-row.center .grid-image {
+    position: relative;
+    top: -20rem;
+    margin-top: 0;
+}
+
+.image-row:last-child {
+    margin-top: -290px; /* Increased negative margin to move up more */
+}
+
+
+
+
+
+
+
+
+
+img[alt="About"] {
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 33rem;
+    left: 4rem;
+    z-index: 1;
+    font-weight: bold;
+}
+
+img[alt="Experience"]{
+
+    font-size: 3rem;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 28rem;
+    left: 50rem;
+    z-index: 1;
+    font-weight: bold;
+
+}
+
+.body{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+
+
+.experience2{
+    font-size: 1.3rem;
+   height: 60%;
+   width: 40%;
+   z-index: 2;
+   position: relative;
+   margin-top: -32rem;
+   margin-left: 52rem;
+
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    
+}
+
+.about2 {
+    font-size: 1.3rem; /* Adjust font size as needed */
+   position: absolute;
+   margin-top: 15rem;
+   height: 65%;
+   width: 35%;
+   margin-top: 24rem;
+   margin-left: 7rem;
+   z-index: 1;
+   font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* HAMBURGER MENU*/
+#hamurger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Mynerve', cursive;  /* Matching your portfolio style */
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-top: 6rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.headphonebelow{
+    position: relative;
+    top: -10rem;
+    left: 4rem;
+}
+.headphone{
+    position: relative;
+    right: -6rem;
+}
+.teeth{
+    position: relative;
+    top: -20rem;
+    left: -40rem;
+    transform: scale(1.2)
+}
+
+.sweertooth{
+    
+    position: relative;
+    left: 47rem;
+    
+}
+
+.aquariumtext{
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.aquarium {
+    position: relative;
+    top: -13rem; /* Adjust the negative value to move it up */
+    max-width: 700px;
+    height: auto;       /* Height will adjust to maintain aspect ratio */
+  }
+.justwatch1{
+    position: relative;
+    top: -20rem;
+}
+.project-container4 {
+    display: flex; /* Use flexbox for easy alignment */
+    justify-content: space-between; /* Space out the images */
+    align-items: center; /* Center the images vertically */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Optional: Set a max width */
+    padding: 20px; /* Add some padding */
+    position: relative;
+    top: -50px;
+}
+
+.justwatch {
+    max-width: 700px;
+    position: absolute;
+    margin-left: 45rem;
+    margin-top: 20rem;
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+.justwatch1 {
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 9rem;
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Target the first paragraph */
+.about.project .all p:first-child { 
+    font-size: 2.3rem;
+    position: relative;
+    top: -126rem; /* Adjust this value as needed */
+    left: 53rem;
+    width: 30%; 
+    max-width: 800px; 
+    z-index: 1; 
+    margin-top: 0rem; 
+    
+    font-family: 'Great Vibes',cursive; 
+    color: #fff; /* Insert this line for white text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+/* Target the second paragraph */
+.about.project .all p:nth-child(2) {
+    font-size: 2.3rem;
+    position: relative;
+    top: -93rem; /* Adjust this value as needed */
+    left: 13rem;
+    width: 30%; 
+    max-width: 800px; 
+    z-index: 1; 
+    margin-top: 0rem; ;
+    
+    font-family: 'Great Vibes',cursive; 
+    color: #fff; /* Insert this line for white text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Target the third paragraph */
+.about.project .all p:nth-child(3) {
+    font-size: 2.2rem;
+    position: relative;
+    top: -61rem; /* Adjust this value as needed */
+   margin-left: 55rem; 
+    width: 15%; 
+    max-width: 700px; 
+    z-index: 1; 
+    margin-top: 0rem; ;
+    
+    font-family: 'Great Vibes',cursive; 
+    color: #fff; /* Insert this line for white text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Target the fourth paragraph */
+.about.project .all p:nth-child(4) {
+    
+    font-size: 2.3rem;
+    position: relative;
+    top: -41rem; /* Adjust this value as needed */
+    left: 19rem;
+    width: 15%; 
+    max-width: 700px; 
+    z-index: 1; 
+    margin-top: 0rem; ;
+    
+    font-family: 'Great Vibes',cursive; 
+    color: #fff; /* Insert this line for white text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative; /* Essential for absolute positioning within */
+    margin-top: -10rem; /* Adjust as needed */
+     /* Example: Semi-transparent background for the section */
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; /* Needed for positioning the image absolutely within */
+}
+
+.contact-image {
+    position: absolute;
+    left: 0; /* Or adjust as needed */
+    top: 0;   /* Align to the top of the container */
+    width: 100%; /* Or a specific width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: -1; /* Place image behind the text */
+}
+
+.contact-text { /* Container for all text elements */
+    position: relative; /* So we can use z-index if needed */
+    z-index: 1; /* Ensure text is above the image */
+    color: white; /* Default text color */
+    padding: 20px; /* Add some padding */
+}
+
+.contact-text h2 {
+    font-size: 5.5rem;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #d9c9c9; /* Or change as needed */
+}
+
+.contact-text p {
+    font-size: 1.1rem;
+    color: #ba0000; /* Or change as needed */
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 20px; /* Add space between text and info */
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0); /* Or change as needed */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: white; /* Or change as needed */
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+h2 {
+    font-size: 2.5rem; /* Increase font size */
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    font-size: 1.3rem; /* Increase font size */
+    font-family: 'Great Vibes',cursive;
+}
+
+
+h3{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+}
+
+
+
+/* footer section*/
+footer {
+    /* Remove height: 26vh; */
+    margin: 0 1rem; /* Keep your margins */
+    padding: 20px 0; /* Add some vertical padding */
+    background-color: #1858d8; /* Or whatever color you want */
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 1rem; /* Adjust as needed */
+}
+
+footer nav {
+    display: flex;
+    justify-content: center; /* Center the links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
